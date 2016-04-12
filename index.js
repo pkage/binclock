@@ -37,4 +37,10 @@ updateClock = function() {
 $(document).ready(function() {
 	updateClock();
 	setInterval(updateClock, 500);
+	
+	$(document).on('keydown', function(ev) {
+		if (ev.keyCode == 32) {
+			$('.light').toggleClass('purist');
+		}
+	})	
 })
