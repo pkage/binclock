@@ -36,7 +36,7 @@ updateClock = function() {
 
 $(document).ready(function() {
 	updateClock();
-	setInterval(updateClock, 500);
+	setInterval(updateClock, 1000);
 	
 	$(document).on('keydown', function(ev) {
 		if (ev.keyCode == 32) {
